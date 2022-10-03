@@ -1,0 +1,65 @@
+div.project-body{
+  background-color: rgb(230,218,207);
+  padding: 8% 33% 5% 33%;
+  position: relative;
+  header{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0% 0% 10% 0%;
+    div{
+      height: 20px;
+      width: 20px;
+      background-color: rgb(0, 80, 255);
+      position: absolute;
+      right: 53%;
+      top: 160px;
+    }
+  }
+  div.blue-spark{
+    height: 45px;
+    width: 10px;
+    background-color: rgb(0, 80, 255);
+    position: absolute;
+    top: 45%;
+  }
+  div.card{
+    padding: none;
+    div.project-card{
+      filter: drop-shadow(-0.6rem 0.6rem 1rem rgba(138, 138, 146, 0.6));
+      padding: none;
+      background-color: #fff;
+      // width: fit-content;
+      // height: fit-content;
+      display: flex;
+      section.left{
+        article{
+          padding: 20% 10% 0% 10%;
+          h1{
+            color: rgb(0, 80, 255);
+            font-weight: bold;
+            font-size: 1.5em;
+            text-transform: capitalize;
+            padding: none;
+          }
+          h5{
+            padding: none;
+            font-size: 1em;
+            color: #000;
+            text-transform: capitalize;
+          }
+        }
+        p{
+          font-size: 1.1em;
+          padding: 0% 10% 0% 10%;
+          line-height: 20px;
+
+        }
+      }
+      section.right{
+        height: fit-content;
+      }
+    }
+  }
+}

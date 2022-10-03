@@ -1,0 +1,72 @@
+.App {
+  nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+    align-items: center;
+    margin: 2% 0%;
+    div{
+      grid-column: 2/3;
+      span.cube{
+        height: 3%;
+        width: 3%;
+        background: dodgerblue;
+
+      }
+      span.author-name{
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin: 2px;
+      }
+      span.position{
+        font-size: 1rem;
+        margin: 2px;
+        text-transform: uppercase;
+      }
+    }
+    div.pages-link{
+      grid-column: 3/4;
+      display: flex;
+      justify-self: end;
+      padding: 0% 6%;
+      li{
+        list-style: none;
+        text-transform: uppercase;
+        margin: 3%;
+        .active_link{
+          color: rgb(0, 8, 255);
+          text-decoration: none;
+        }
+        .not_active_link{
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+    .footer{
+      bottom: 0;
+      padding: 2%;
+      display: grid;
+      grid-template-columns: 3rem 2fr 1fr 5rem;
+      div.editor{
+        grid-column: 2/3;
+        color: rgb(56, 58, 59);
+      }
+      div.social-contact-links{
+        text-align: center;
+        grid-column: 3/4;
+        display: flex;
+        section{
+          margin: 0% 6%;
+          b{
+            text-transform: capitalize;
+            margin-bottom: 2%;
+          }
+        }
+      }
+    }
