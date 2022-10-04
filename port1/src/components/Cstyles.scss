@@ -24,7 +24,6 @@ div.contact-body{
     div.fill-name{
       div.info-item{
         input{
-          // width: 150px;
           margin:0px 80px 0px 0px ;
           outline: none;
         }
@@ -41,10 +40,8 @@ div.contact-body{
       outline: none;
       width: 100%;
       height: 50px;
-      // border-bottom: none;
     }
     .message{
-      // margin-top: 15%;
       height: 80px;
     }
     input[type="text"],input[type="email"]{
@@ -69,5 +66,44 @@ div.contact-body{
       border-radius: 30px;
       margin: 5% 0% 10% 0%;
     }
+  }
+}
+@media screen and (max-width:500px){
+  div.contact-body{
+    padding: 0% 0% 3% 10%;
+    header{
+      padding: 6% 0% 8% 0%;
+      div{
+        top: 35px;
+        right: 60%;
+      }
+    }
+    form.contact-form{
+      padding: 2% 5%;
+      div.fill-name{
+        div.info-item{
+          input:last-child{
+            color: red;
+            display: none;
+          }
+        }
+      }
+      div{
+        font-weight: bold;
+      }
+      .email,.subject,.message{
+        outline: none;
+        width: 100%;
+        height: 10px;
+      }
+      .message{
+        height: 10px;
+      }
+      .btn{
+        margin: 5% 0%;
+        // padding: 0%;
+      }
+    }
+    
   }
 }

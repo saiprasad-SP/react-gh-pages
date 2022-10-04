@@ -32,7 +32,9 @@ div.home-body{
       p{
         text-transform: uppercase;
         margin: 10% 0% 10% 0%;
-
+      }
+      div.btns{
+        display: none;
       }
       div.social-icons{
         background-color: #fff;
@@ -89,6 +91,83 @@ div.home-body{
       }
       p{
         font-size: 1.2em;
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  div.home-body{
+    div.container{
+      width: 100%;
+      margin-top: 40%;
+      height: 650px;
+    }
+    div.content-container{
+      flex-direction: column;
+      top: 16%;
+      margin: 0%;
+      padding: 0%;
+      right: 5%;
+      div.editor{
+        filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.5));
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        img{
+          height: 20vh;
+        }
+        p{
+          display: none;
+        }
+        div.btns{
+          display: block;
+          margin: 10% 0%;
+          button.resume{
+            text-transform: uppercase;
+            background-color: rgb(0,80,255);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 0px;
+            width: 36%;
+            margin: 0% 5% 0% 0%;
+          }
+          button.projects{
+            text-transform: uppercase;
+            width: 36%;
+            border-radius: 25px;
+            padding: 10px 0px;
+            border: 1px solid #000;
+          }
+          .btn-links{
+            text-decoration: none;
+          }
+          .btn-resume{
+            color: #fff;
+          }
+          .btn-projects{
+            color: #000;
+          }
+        }
+        div.social-icons{
+          font-size: 3.7vh;
+        }
+      }
+      div.about-editor{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        header{
+          font-size: 2.5em;
+        }
+        article{
+          font-size: 1.2em;
+        }
+        div.btns{
+          display: none;
+        }
+        p{
+          font-size: 1em;
+        }
       }
     }
   }

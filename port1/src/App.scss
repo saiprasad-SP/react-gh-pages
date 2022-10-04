@@ -13,7 +13,7 @@
         height: 3%;
         width: 3%;
         background: dodgerblue;
-
+      
       }
       span.author-name{
         font-size: 2rem;
@@ -40,11 +40,15 @@
           color: rgb(0, 8, 255);
           text-decoration: none;
         }
-        .not_active_link{
-          color: #000;
-          text-decoration: none;
-        }
+        // .not_active_link{
+        //   color: #000;
+        //   text-decoration: none;
+        // }
       }
+    }
+    button.mobile-menu-bars{
+      color: red;
+      display: none;
     }
   }
 }
@@ -66,6 +70,76 @@
           b{
             text-transform: capitalize;
             margin-bottom: 2%;
+          }
+        }
+      }
+    }
+    // responsive for mobile
+    @media screen and (max-width:500px){
+      div.App{
+        nav{
+          position: static;
+          display: flex;
+          justify-content: space-between;
+          div{
+            display: flex;
+            flex-direction: column;
+            span.author-name{
+              // color: red;
+              font-size: 1.8em;
+            }
+            span.vertical-bar{
+              display: none;
+            }
+            span.position{
+              font-size: 0.8em;
+              // color: red;
+            }
+          }
+          div.pages-link{
+            display: none;
+          }
+          div.mobile-pages-link{
+            width: 100%;
+            transition: all 0.5s ease-out;
+            background-color: rgb(201, 192, 184);
+            top: 0%;
+            right: 0%;
+            position: absolute;
+            display: block;
+            padding: 3% ;
+            li{
+              text-align: center;
+              display: block;
+              text-transform: uppercase;
+              list-style-type: none;
+              margin: 3%;
+              padding: 5%;
+            }
+          }
+          .mobile-menu-bars{
+            display: block;
+            position: absolute;
+            color: rgb(0,80,255);
+            top: 3%;
+            right: 2%;
+        }
+        
+        
+        }
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+        div.editor{
+          order: 2;
+          margin: 2% 0%;
+        }
+        div.social-contact-links{
+          flex-wrap: wrap;
+          justify-content: center;
+          section.contact-social{
+            margin: 5% 0%;
           }
         }
       }

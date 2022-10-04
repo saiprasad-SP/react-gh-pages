@@ -85,3 +85,60 @@ div.resume-body{
     }
   }
 }
+@media screen and (max-width:500px){
+  div.resume-body{
+    padding: 0% 0% 1% 10%;
+    header{
+      padding: 6% 0% 8% 0%;
+      div{
+        top: 35px;
+        right: 60%;
+      }
+    }
+    div.download-btn,div.eduaction-section{
+      justify-content: space-between;
+      margin: 0% 4%;
+      h1{
+        font-size: 1.4em;
+      }
+      button{
+        padding: 0px 8px;
+        width: 40%;
+      }
+    }
+    div.card{
+      div.experience-card,div.educational-card{
+        padding: 10% 0% 10% 2%;
+        margin: 6% 0% 8% 0%;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        section.left{
+          width: fit-content;
+          li{
+            &:first-child{
+              font-size: 1.2em;
+            }
+            &:nth-child(2){
+              font-size: 1em;
+            }
+            &:nth-child(3){
+              font-size: 0.8em;
+            }
+            &:last-child{
+              font-size: 0.8em;
+            }
+          }
+        }
+        section.right{
+          width: 80%;
+          p{
+            padding-left: 4%;
+            font-size: 0.85em;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

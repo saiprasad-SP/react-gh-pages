@@ -29,11 +29,9 @@ div.project-body{
     div.project-card{
       filter: drop-shadow(-0.6rem 0.6rem 1rem rgba(138, 138, 146, 0.6));
       padding: none;
-      background-color: #fff;
-      // width: fit-content;
-      // height: fit-content;
       display: flex;
       section.left{
+        background-color: #fff;
         article{
           padding: 20% 10% 0% 10%;
           h1{
@@ -58,7 +56,58 @@ div.project-body{
         }
       }
       section.right{
-        height: fit-content;
+        img{
+          height: fit-content;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  div.project-body{
+    padding: 0% 0% 1% 10%;
+    header{
+      padding: 6% 0% 8% 0%;
+      div{
+        top: 35px;
+        right: 60%;
+      }
+    }
+    div.blue-spark{
+      top: 18%;
+    }
+    div.card{
+      div.project-card{
+        flex-direction: column;
+        width: 80%;
+        padding: 0%;
+        margin: 0%;
+        section.left{
+          width: fit-content;
+          margin: 0%;
+          padding: 0%;
+          article{
+            padding: 0% 8%;
+            h1{
+              font-size: 1.2em;
+              padding: 0%;
+            }
+            h5{
+              font-size: 0.8em;
+              padding: 0%;
+            }
+          }
+          p{
+            font-size: 0.9em;
+            padding: 0% 8%;
+          }
+        }
+        section.right{
+          img{
+            width: 48.6vh;
+            height: 50vh;
+          }
+        }
       }
     }
   }
