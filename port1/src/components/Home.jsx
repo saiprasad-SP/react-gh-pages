@@ -20,6 +20,18 @@ export default function Home() {
           <header>sai prasad</header>
           <hr />
           <p>software developer</p>
+          <div className="btns">
+            <button className="resume">
+              <Link to="/resume" className="btn-links btn-resume">
+                resume
+              </Link>
+            </button>
+            <button className="projects">
+              <Link to="/projects" className="btn-links btn-projects">
+                projects
+              </Link>
+            </button>
+          </div>
           <div className="social-icons">
             <TiSocialFacebook style={{ marginRight: "20px" }} />
             <TiSocialTwitter style={{ marginRight: "20px" }} />
