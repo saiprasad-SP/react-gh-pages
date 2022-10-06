@@ -23,7 +23,7 @@ div.home-body{
         font-size: 2em;
         text-transform: capitalize;
         margin: 10% 0% 5% 0%;
-
+        font-weight: bold;
       }
       hr{
         width: 20%;
@@ -95,40 +95,48 @@ div.home-body{
     }
   }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:320px){
   div.home-body{
     div.container{
-      width: 100%;
+      width: auto;
       margin-top: 40%;
-      height: 650px;
+      height: 700px;
     }
     div.content-container{
+      position: absolute;
       flex-direction: column;
       top: 16%;
-      margin: 0%;
-      padding: 0%;
-      right: 5%;
+      margin-left: -20%;
+      // padding: 0%;
+      // right: 5%;
       div.editor{
         filter: drop-shadow(-5px 5px 5px rgba(0,0,0,0.5));
         margin: 0%;
-        padding: 0%;
+        // padding: 0%;
         width: 100%;
         img{
-          height: 20vh;
+          height: 24vh;
+        }
+        header{
+          margin: 0%;
+          padding: 0%;
+        }
+        hr{
+          border: 1px solid rgb(0,80,255);
         }
         p{
           display: none;
         }
         div.btns{
           display: block;
-          margin: 10% 0%;
+          margin: 8% 0%;
           button.resume{
             text-transform: uppercase;
             background-color: rgb(0,80,255);
             border: none;
             border-radius: 25px;
             padding: 10px 0px;
-            width: 36%;
+            width: 38%;
             margin: 0% 5% 0% 0%;
           }
           button.projects{
@@ -157,16 +165,16 @@ div.home-body{
         margin: 0%;
         padding: 0%;
         header{
-          font-size: 2.5em;
+          font-size: 2em;
         }
         article{
-          font-size: 1.2em;
+          font-size: 1em;
         }
         div.btns{
           display: none;
         }
         p{
-          font-size: 1em;
+          font-size: 0.8em;
         }
       }
     }

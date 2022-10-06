@@ -28,8 +28,8 @@ export default function App() {
       <div className="App">
         <Router>
           <nav>
-            <div>
-              <span className="cube"></span>
+            <div className="logo">
+              <div className="cube"></div>
               <span className="author-name">sai prasad</span>
               <span className="vertical-bar"> /</span>
               <span className="position">software developer</span>

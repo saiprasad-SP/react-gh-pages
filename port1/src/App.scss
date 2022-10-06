@@ -7,12 +7,15 @@
     grid-template-columns: 5rem 1fr 1fr 5rem;
     align-items: center;
     margin: 2% 0%;
-    div{
+    div.logo{
       grid-column: 2/3;
-      span.cube{
-        height: 3%;
-        width: 3%;
-        background: dodgerblue;
+      div.cube{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(0, 80, 255);
+        position: absolute;
+        left: 3%;
+        top: 35%;
       
       }
       span.author-name{
@@ -47,7 +50,7 @@
       }
     }
     button.mobile-menu-bars{
-      color: red;
+      // color: red;
       display: none;
     }
   }
@@ -75,18 +78,21 @@
       }
     }
     // responsive for mobile
-    @media screen and (max-width:500px){
+    @media screen and (max-width:320px){
       div.App{
         nav{
           position: static;
           display: flex;
           justify-content: space-between;
-          div{
+          div.logo{
             display: flex;
             flex-direction: column;
+            div.cube{
+              display: none;
+            }
             span.author-name{
               // color: red;
-              font-size: 1.8em;
+              font-size: 1.6em;
             }
             span.vertical-bar{
               display: none;
@@ -120,9 +126,12 @@
           .mobile-menu-bars{
             display: block;
             position: absolute;
-            color: rgb(0,80,255);
+            // color: rgb(0,80,255);
             top: 3%;
             right: 2%;
+            background: none;
+            border: none;
+            font-size: 3vh;
         }
         
         
