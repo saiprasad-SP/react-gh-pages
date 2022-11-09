@@ -39,22 +39,22 @@ export default function App() {
               onClick={() => setIsMobile(false)}
             >
               <li>
-                <NavLink to="/" className={classNameFunc}>
+                <NavLink to="/" id="mobile-links" className={classNameFunc}>
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/resume" className={classNameFunc}>
+                <NavLink to="/resume" id="mobile-links" className={classNameFunc}>
                   Resume
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" className={classNameFunc}>
+                <NavLink to="/projects" id="mobile-links" className={classNameFunc}>
                   projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={classNameFunc}>
+                <NavLink to="/contact" id="mobile-links" className={classNameFunc}>
                   contact
                 </NavLink>
               </li>
@@ -63,7 +63,7 @@ export default function App() {
               className="mobile-menu-bars"
               onClick={() => setIsMobile(!isMobile)}
             >
-              {isMobile ? <CgClose /> : <CgMenu />}
+              {isMobile ? <CgClose className="close-menu"/> : <CgMenu />}
             </button>
           </nav>
           <Routes>

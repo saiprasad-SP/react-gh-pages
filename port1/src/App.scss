@@ -83,7 +83,7 @@
         nav{
           position: static;
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
           div.logo{
             display: flex;
             flex-direction: column;
@@ -98,7 +98,7 @@
               display: none;
             }
             span.position{
-              font-size: 0.8em;
+              font-size: 0.75em;
               // color: red;
             }
           }
@@ -107,18 +107,19 @@
           }
           div.mobile-pages-link{
             width: 100%;
-            transition: all 0.5s ease-out;
+            height: 100%;
+            // transition: all 5s ease-in-out;
             background-color: rgb(201, 192, 184);
             top: 0%;
-            right: 0%;
             position: absolute;
-            display: block;
-            padding: 3% ;
+            z-index: 1;
+            display: inline-block;
+            overflow-y: hidden;
+            // padding: 3% ;
             li{
               text-align: center;
               display: block;
               text-transform: uppercase;
-              list-style-type: none;
               margin: 3%;
               padding: 5%;
             }
@@ -126,15 +127,16 @@
           .mobile-menu-bars{
             display: block;
             position: absolute;
-            // color: rgb(0,80,255);
             top: 3%;
             right: 2%;
             background: none;
             border: none;
             font-size: 3vh;
+            z-index: 1;
         }
-        
-        
+          #mobile-links{
+            text-decoration: none;
+          }
         }
       }
       .footer{

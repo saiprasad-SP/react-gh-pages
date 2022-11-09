@@ -24,6 +24,9 @@ export default function Contact() {
         }
       );
   };
+  const refreshPage=(e)=>{
+    window.location.reload()
+  }
   return (
     <div className="contact-body">
       <header>
@@ -47,7 +50,7 @@ export default function Contact() {
           message <span>*</span>
         </div>
         <input type="text" className="message" name="message" />
-        <input value="submit" type="submit" className="btn" />
+        <input value="submit" type="submit" className="btn" onClick={refreshPage}/>
       </form>
     </div>
   );
