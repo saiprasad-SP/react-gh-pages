@@ -58,7 +58,7 @@
     .footer{
       bottom: 0;
       padding: 2%;
-      display: grid;
+      // display: grid;
       grid-template-columns: 3rem 2fr 1fr 5rem;
       div.editor{
         grid-column: 2/3;
@@ -88,18 +88,24 @@
             display: flex;
             flex-direction: column;
             div.cube{
-              display: none;
+              display: block;
+              top: 18px;
+              right: 0;
             }
             span.author-name{
               // color: red;
               font-size: 1.6em;
+              position: absolute;
+              left: 32px;
             }
             span.vertical-bar{
               display: none;
             }
-            span.position{
-              font-size: 0.75em;
-              // color: red;
+            span.designation{
+              font-size: 0.85em;
+              position: absolute;
+              top: 5%;
+              left: 12px;
             }
           }
           div.pages-link{
@@ -127,11 +133,11 @@
           .mobile-menu-bars{
             display: block;
             position: absolute;
-            top: 3%;
+            top: 2%;
             right: 2%;
             background: none;
             border: none;
-            font-size: 3vh;
+            font-size: 4vh;
             z-index: 1;
         }
           #mobile-links{
@@ -149,6 +155,9 @@
         div.social-contact-links{
           flex-wrap: wrap;
           justify-content: center;
+          a{
+            color: #000;
+          }
           section.contact-social{
             margin: 5% 0%;
           }

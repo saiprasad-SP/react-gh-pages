@@ -4,9 +4,9 @@ import {
   TiSocialFacebook,
   TiSocialTwitter,
   TiSocialLinkedin,
-  TiSocialGithubCircular,
   TiSocialInstagram
 } from "react-icons/ti";
+import {AiFillGithub} from 'react-icons/ai'
 import { Link } from "react-router-dom";
 // import {BsGithub, BsInstagram} from 'react-icons/bs'
 
@@ -33,11 +33,11 @@ export default function Home() {
             </button>
           </div>
           <div className="social-icons">
-            <TiSocialFacebook style={{ marginRight: "20px" }} />
-            <TiSocialTwitter style={{ marginRight: "20px" }} />
-            <TiSocialLinkedin style={{ marginRight: "20px" }} />
-            <TiSocialInstagram style={{ marginRight: "20px" }} />
-            <TiSocialGithubCircular style={{ marginRight: "20px" }} />
+            <a href='https://www.linkedin.com/in/shiva-sai-prasad-bb083215a/'target="_blank"rel="noopener noreferrer"><TiSocialFacebook style={{ marginRight: "20px",fontSize:"3vh" }} /></a>
+            <a href='https://www.linkedin.com/in/shiva-sai-prasad-bb083215a/'target="_blank"rel="noopener noreferrer"><TiSocialTwitter style={{ marginRight: "20px",fontSize:"3vh" }} /></a>
+            <a href='https://www.linkedin.com/in/shiva-sai-prasad-bb083215a/'target="_blank"rel="noopener noreferrer" ><TiSocialLinkedin style={{ marginRight: "20px",fontSize:"3vh" }} /></a>
+            <a href='https://www.linkedin.com/in/shiva-sai-prasad-bb083215a/'target="_blank"rel="noopener noreferrer"><TiSocialInstagram style={{ marginRight: "20px",fontSize:"3vh" }} /></a>
+            <a href="https://github.com/saiprasadsp" target="_blank"rel="noopener noreferrer"><AiFillGithub style={{ marginRight: "20px",fontSize:"3vh" }} /></a>
           </div>
         </div>
         <div className="about-editor">

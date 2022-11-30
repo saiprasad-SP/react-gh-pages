@@ -37,10 +37,17 @@ div.home-body{
         display: none;
       }
       div.social-icons{
+        
         background-color: #fff;
         padding: 15px 0px;
         font-size: 2vh;
         cursor: pointer;
+        a{
+          color: #000;
+          &:hover{
+            color: rgb(0,80,255);;
+          }
+        }
       }
     }
     div.about-editor{
@@ -98,7 +105,7 @@ div.home-body{
 @media screen and (max-width:750px){
   div.home-body{
     div.container{
-      width: auto;
+      width: 100%;
       margin-top: 40%;
       height: 700px;
     }
