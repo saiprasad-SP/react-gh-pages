@@ -1,7 +1,7 @@
 div.resume-body{
   background-color: rgb(230,218,207);
   padding: 8% 33% 5% 33%;
-  position: relative;
+  // position: relative;
   header{
     text-transform: capitalize;
     text-align: center;
@@ -91,8 +91,8 @@ div.resume-body{
     header{
       padding: 6% 0% 8% 0%;
       div{
-        top: 35px;
-        right: 65%;
+        top: 150px;
+        right: 60%;
       }
     }
     div.download-btn,div.eduaction-section{
@@ -102,6 +102,7 @@ div.resume-body{
         font-size: 1.4em;
       }
       button{
+        font-size: 1.2em;
         padding: 0px 8px;
         width: 50%;
       }
